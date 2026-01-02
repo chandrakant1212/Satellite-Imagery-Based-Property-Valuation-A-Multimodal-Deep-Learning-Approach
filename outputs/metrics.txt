@@ -1,2 +1,0 @@
-Baseline RF R2: 0.7953
-Multimodal DL R2: 0.7273
