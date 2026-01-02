@@ -1,0 +1,43 @@
+# System & IDE
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.DS_Store
+.vscode/
+.idea/
+
+# Environment
+.env
+.venv/
+venv/
+mpl_cache/
+
+# Data (Too large for Git)
+data/raw/*.zip
+data/raw/*.csv
+data/images/
+data/processed/
+!data/raw/test.csv 
+# Note: We keep test.csv if small, otherwise ignore.
+
+# Models (Too large for Git)
+*.pkl
+*.pth
+*.h5
+
+# Outputs (Ignore everything by default)
+outputs/*
+
+# Exceptions (Deliverables to Track)
+!outputs/final_submission.csv
+!outputs/valid_predictions.csv
+!outputs/metrics.txt
+!outputs/metrics_comparison.csv
+
+# Ensure these binaries are IGNORED
+outputs/*.pkl
+outputs/*.pth
+outputs/*.json
+
+# Logs
+*.log

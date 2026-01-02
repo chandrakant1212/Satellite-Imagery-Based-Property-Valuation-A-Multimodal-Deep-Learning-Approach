@@ -1,0 +1,17 @@
+requests
+openpyxl
+tqdm
+pandas
+numpy<2
+geopandas
+torch
+torchvision
+scikit-learn
+opencv-python
+matplotlib
+seaborn
+jupyter
+pillow
+shap
+grad-cam
+xgboost
