@@ -36,24 +36,40 @@ The final model achieves an **R² score of 0.8250**, significantly outperforming
 
 ## Setup & Usage
 
-### 1. Installation
+### 1. Clone & Environment
+Clone the repository and set up a virtual environment:
+```bash
+git clone https://github.com/chandrakant1212/Satellite-Imagery-Based-Property-Valuation-A-Multimodal-Deep-Learning-Approach.git
+cd Satellite-Imagery-Based-Property-Valuation-A-Multimodal-Deep-Learning-Approach
+
+# Create Virtual Environment
+python -m venv venv
+
+# Activate (Windows)
+.\venv\Scripts\activate
+# Activate (Mac/Linux)
+# source venv/bin/activate
+```
+
+### 2. Installation
+Install dependencies:
 ```bash
 pip install -r requirements.txt
 ```
 
-### 2. Data Fetching
+### 3. Data Fetching
 (Optional) Download new satellite images:
 ```bash
 python data_fetcher.py --limit 1000
 ```
 
-### 3. Training & Analysis
+### 4. Training & Analysis
 Run the notebooks in order:
-1.  `notebooks/preprocessing.ipynb`: Prepares data.
+1.  `notebooks/preprocessing.ipynb`: Prepares data & maps.
 2.  `notebooks/model_training.ipynb`: Trains the Multimodal Model.
 3.  `notebooks/visualization.ipynb`: Visualizes model attention.
 
-### 4. Generate Predictions
+### 5. Generate Predictions
 Create `final_submission.csv`:
 ```bash
 python generate_predictions.py
